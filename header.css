@@ -11,6 +11,13 @@ header{
     height: 550px;
 }
 
+@media(max-width: 975px){ /* Abstand von .circle img an .header_text verkürzen */
+    .header_text{
+        font-size: 5vw;
+        text-align: center;
+    }
+}
+
 .circle{
     height: 600px;
     width: 600px;
@@ -33,6 +40,12 @@ header{
 
 nav{
     margin-bottom: 120px;
+}
+@media(max-width: 975px){ /* weniger Abstand zwischen Navbat und h1 auf obilen Geräten */
+    nav{
+        margin-bottom: 5vw;
+        text-align: center;
+    }
 }
 
 nav ul{
@@ -68,3 +81,27 @@ nav a:hover::after{
     width: 100%;
 }
 
+#toggle_button{
+    display: none;
+}
+
+label[for="toggle_button"]{
+    display: none;
+}
+
+label[for="toggle_button"] span{
+    font-size: 40px;
+}
+
+@media(max-width: 975px){ /* blendet Hamburger-Menü ein */
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    #toggle_button:checked ~ ul{
+        display: flex;
+    }
+    label[for="toggle_button"]{
+        display: block;
+    }
+}
