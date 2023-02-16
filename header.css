@@ -1,5 +1,5 @@
 header{
-    padding: 100px 25px;
+    padding: 70px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +8,9 @@ header{
 }
 
 .header_text{
-    height: 550px;*/
+    /*height: 550px;*/
     width: 550px;
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 @media(max-width: 800px){ /* Abstand von .circle img an .header_text verkürzen */
