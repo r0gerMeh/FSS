@@ -8,13 +8,19 @@ header{
 }
 
 .header_text{
-    height: 550px;
+    height: 550px;*/
+    width: 550px;
+    max-width: 100%;
 }
 
-@media(max-width: 975px){ /* Abstand von .circle img an .header_text verkürzen */
+@media(max-width: 800px){ /* Abstand von .circle img an .header_text verkürzen */
     .header_text{
+        height: 100%;
+        max-width: 100%;
         font-size: 5vw;
+        /*font-size: clamp(0.5rem, 1.5vvw, 2rem);*/
         text-align: center;
+        /*padding-bottom: 30px;*/
     }
 }
 
@@ -41,9 +47,9 @@ header{
 nav{
     margin-bottom: 120px;
 }
-@media(max-width: 975px){ /* weniger Abstand zwischen Navbat und h1 auf obilen Geräten */
+@media(max-width: 800px){ /* weniger Abstand zwischen Navbat und h1 auf mobilen Geräten */
     nav{
-        margin-bottom: 5vw;
+        margin-bottom: 10vw;
         text-align: center;
     }
 }
@@ -91,9 +97,21 @@ label[for="toggle_button"]{
 
 label[for="toggle_button"] span{
     font-size: 40px;
+    display: flex;
+    align-items: flex-start;
 }
 
 @media(max-width: 975px){ /* blendet Hamburger-Menü ein */
+
+    nav{
+        position: absolute; /* verschiebt das Hamburger-Menü in die obere linke Ecke*/
+        top: 0;
+        left: 0;
+        background-color: var(--secondary-color);
+        padding: 15px;
+        border-radius: 0 0 25px 0; /* rundet die Ecke im Hamburger-Menü ab*/
+
+    }
     nav ul{
         display: none;
         flex-direction: column;
