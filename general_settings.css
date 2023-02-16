@@ -46,7 +46,7 @@ h3{
 
 @media(max-width: 800px){
     h1{
-        font-size: 6vw; /*vorher 7vw*/
+        font-size: 8vw; /*vorher 7vw*/
         text-align: center;
     }
     .subheading{
