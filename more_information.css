@@ -88,6 +88,39 @@
     }
 }
 
+@media(max-width: 420px){
+    .grid_container{
+        padding-top: 20px;
+        grid-template-columns: 1fr 1fr; /* zwei gleichgroße Kästchen/Zeilen // fr = fraction */
+        grid-template-rows: auto auto auto auto; /* vier Reihen innerhalb des Grids/Tabelle */
+        /*grid-template-areas: /* Aufteilung/Anordnung des Grids */
+        /*"item1 item1" /* item1 + item1 = steht zweimal hintereinander, daher Spalte doppelt so groß */
+        /*"item5 item5" */
+        /*"item2"
+        "item4"
+        "item3"
+        "item5"
+        "item1"; */
+        max-height: 800px;
+        font-size: 15px;
+        justify-content: center;
+        max-width: calc(70% - 40px);
+        justify-content: center; 
+        padding: 5px;
+    }
+
+/*    .grid_item{
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+        gap: 15px;
+    
+    }    
+*/
+ 
+}
+
+
 @media(max-width: 650px){
     #more_information_section h2{
         font-size: 9vw;
