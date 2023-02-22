@@ -13,7 +13,7 @@
     display: flex; /* Cards sind nun nebeneinander, statt untereinander */
     gap: 40px;
     justify-content: center; /* Elemnte wertden mittig angeordnet*/
-    flex-wrap: wrap-reverse; /* Elemente werden bei zu wenig Platz untereinander angezeigt */
+    flex-wrap: wrap; /* Elemente werden bei zu wenig Platz untereinander angezeigt */
 }
 
 .card{

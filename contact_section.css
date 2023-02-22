@@ -1,9 +1,9 @@
-#more_information_section{
+#contact_section{
     padding: 70px 0;
     background-color: var(--secondary-color);
 }
 
-#more_information_section h2{
+#contact_section h2{
     font-size: 50px;
     text-align: center;
 }
@@ -101,32 +101,23 @@
         "item3"
         "item5"
         "item1"; */
-        max-height: 800px;
-        font-size: 15px;
+        font-size: 13px;
         justify-content: center;
-        max-width: calc(70% - 40px);
-        justify-content: center; 
         padding: 5px;
     }
 
-/*    .grid_item{
-        display: flex;
+    .grid_item{
         align-items: center;
-        margin: auto 0;
-        gap: 15px;
-    
+        gap: 8px;
     }    
-*/
- 
 }
 
-
 @media(max-width: 650px){
-    #more_information_section h2{
+    #contact_section h2{
         font-size: 9vw;
     }
     .grid_item{
-        padding: 20px;
+        padding: 5px;
     }
     .grid_item img{
         height: 100px;
