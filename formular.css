@@ -8,20 +8,28 @@ header{
 }
 
 .header_text{
-    /*height: 550px;*/
     width: 550px;
-    /*max-width: 100%;*/
 }
 
-@media(max-width: 800px){ /* Abstand von .circle img an .header_text verkürzen */
-    .header_text{
-        height: 100%;
-        max-width: 100%;
-        font-size: 5vw;
-        /*font-size: clamp(0.5rem, 1.5vvw, 2rem);*/
-        text-align: center;
-        /*padding-bottom: 30px;*/
-    }
+
+.circle{
+    height: 600px;
+    width: 600px;
+
+    max-height: 80vw;
+    max-width: 80vw;
+
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    height: 100%;
 }
 
 nav{
@@ -102,4 +110,8 @@ label[for="toggle_button"] span{
     label[for="toggle_button"]{
         display: block;
     }
+}
+
+#formular_section {
+    display: start;
 }

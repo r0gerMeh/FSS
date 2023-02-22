@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="general_settings.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="formular.css">
-    <title>Formulare</title>
-  </head>
-  <body>
+    <link rel="html"       href="index.html">
+    <title></title>
+</head>
+<body>
     <header>
         <div class="header_text">
             <nav>
@@ -19,34 +20,47 @@
                 </label>
                 <ul>
 
-                    <li><a href="#about_us_section">Über uns</a></li>
-                    <li><a href="#services_section">freie Gärten</a></li>
-                    <li><a href="#contact_section">Kontakt</a></li>
-                    <li><a href="#formular">Formulare</a></li>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="">Startseite</a></li>
                 </ul>
             </nav>
         </div>
-            
-
     </header>
+
+    <section id="formular_section">
+            <h2>Allgemeine Daten</h2>
+            <div class="flex_container">
+                <div class="card">
+                    <form id="myForm">
+                        <fieldset>
+                          <!-- <legend>Antrag</legend> -->
+                          <p>
+                            <label for="firstname">Vorname</label>
+                            <br />
+                            <input type="text" id="firstname" name="firstname" required />
+                          </p>
+                          <p>
+                            <label for="lastname">Nachname</label>
+                            <br />
+                            <input type="text" id="lastname" name="lastname" required />
+                          </p>
+                          <p>
+                            <label for="email">Email</label>
+                            <br />
+                            <input type="email" id="email" name="email" required />
+                          </p>
+                        <fieldset>
+                </div>        
+                    <!-- <h3>Schritt 1</h3>
+                    <p> Schaue auf ebay oder wende dich direkt an uns </p> 
+                    <a href="ebay.de">ebay</a>
+                    <a href="mailto:kontakt@frohes-schaffen-stralsund.de">Kontakt</a> -->
+            </div>
+    </section>
+    
     <form id="myForm">
       <fieldset>
         <legend>Antrag</legend>
-        <p>
-          <label for="firstname">Vorname</label>
-          <br />
-          <input type="text" id="firstname" name="firstname" required />
-        </p>
-        <p>
-          <label for="lastname">Nachname</label>
-          <br />
-          <input type="text" id="lastname" name="lastname" required />
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <br />
-          <input type="email" id="email" name="email" required />
-        </p>
         <p>
           <label for="avatar">Avatar</label>
           <br />
@@ -76,5 +90,5 @@
       </fieldset>
     </form>
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
