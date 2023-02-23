@@ -28,11 +28,9 @@
     </header>
 
     <section id="formular_section">
-            <h2>Allgemeine Daten</h2>
+            <h2>Formulare</h2>
             <div class="flex_container">
                 <div class="card">
-                    <form id="myForm">
-                        <fieldset>
                           <!-- <legend>Antrag</legend> -->
                           <p>
                             <label for="firstname">Vorname</label>
@@ -45,50 +43,42 @@
                             <input type="text" id="lastname" name="lastname" required />
                           </p>
                           <p>
-                            <label for="email">Email</label>
+                            <label for="email">E-Mail</label>
                             <br />
                             <input type="email" id="email" name="email" required />
                           </p>
-                        <fieldset>
-                </div>        
-                    <!-- <h3>Schritt 1</h3>
-                    <p> Schaue auf ebay oder wende dich direkt an uns </p> 
-                    <a href="ebay.de">ebay</a>
-                    <a href="mailto:kontakt@frohes-schaffen-stralsund.de">Kontakt</a> -->
+                          <p>
+                            <label for="birthday">Geburtsdatum</label>
+                            <br />
+                            <input type="date" id="birthday" name="birthday" required />
+                          </p>
+                </div>  
+                <div class="card">
+                    <!-- <legend>Antrag</legend> -->
+                    <p>
+                      <label for="street">Straße</label>
+                      <br />
+                      <input type="text" id="street" name="street" required />
+                    </p>
+                    <p>
+                      <label for="street_numer">Hausnummer</label>
+                      <br />
+                      <input type="number" id="street_numer" name="street_numer" required />
+                    </p>
+                    <p>
+                      <label for="postcode">PLZ</label>
+                      <br />
+                      <input type="number" id="postcode" name="postcode" required />
+                    </p>
+                    <p>
+                      <label for="city">Stadt</label>
+                      <br />
+                      <input type="text" id="city" name="city" required />
+                    </p>
+          </div      
             </div>
     </section>
     
-    <form id="myForm">
-      <fieldset>
-        <legend>Antrag</legend>
-        <p>
-          <label for="avatar">Avatar</label>
-          <br />
-          <input type="file" name="avatar" id="avatar" />
-        </p>
-
-        <p>
-          <label for="street">Straße</label>
-          <br />
-          <input type="text" id="street" name="street" required />
-        </p>
-
-        <p>
-            <label for="number">Hausnummer</label>
-            <br />
-            <input type="text" id="number" name="number" required />
-          </p>
-  
-
-        <p>
-          <input type="checkbox" id="spam" name="spam" checked />
-          <label for="spam">Ja, ich möchte Dokumente (z.B. Abrechnungen) per E-Mail erhalten</label>
-        </p>
-        <p>
-          <button id="btnSubmit">Jetzt registrieren</button>
-        </p>
-      </fieldset>
-    </form>
     <script src="app.js"></script>
 </body>
 </html>

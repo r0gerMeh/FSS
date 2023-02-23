@@ -1,5 +1,5 @@
 header{
-    padding: 70px 25px;
+    padding: 50px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,38 +7,19 @@ header{
     flex-wrap: wrap;
 }
 
-.header_text{
+/*.header_text{
     width: 550px;
 }
 
-
-.circle{
-    height: 600px;
-    width: 600px;
-
-    max-height: 80vw;
-    max-width: 80vw;
-
-    overflow: hidden;
-    border-radius: 50%;
-    border: 20px solid var(--main-brand-color);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circle img{
-    height: 100%;
-}
-
-nav{
+*/ 
+/*nav{
     margin-bottom: 120px;
 }
+*/
 @media(max-width: 800px){ /* weniger Abstand zwischen Navbat und h1 auf mobilen Geräten */
     nav{
         margin-bottom: 10vw;
-        text-align: center;
+
     }
 }
 
@@ -46,6 +27,7 @@ nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+    text-align: center;
 }
 
 nav a{
@@ -112,6 +94,47 @@ label[for="toggle_button"] span{
     }
 }
 
-#formular_section {
-    display: start;
+#formular_section{
+    padding: 0 0;
+    background-color: var(--primary-color);
+}
+
+#formular_section h2{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.flex_container{
+    margin-top: 50px; /* Abstand nach oben*/
+    display: flex; /* Cards sind nun nebeneinander, statt untereinander */
+    align-items: center;
+    /*gap: 40px; */
+    flex-wrap: wrap; /* Elemente werden bei zu wenig Platz untereinander angezeigt */
+    margin: 0 auto;
+    background-color: var(--secondary-color)
+}
+
+.card{
+    width: 350px; /* Breite des Containers */
+    max-width: 95%; /* verhindert, dass die Cards den Rand berühren (90% - Border) */
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.card p{
+    margin: 15px;
+    text-align: center;
+}
+
+
+@media(max-width: 500px){
+    #formular_section h2{
+        font-size: 12vw;
+    }
+    
+    .flex_container {
+        
+    }
 }
