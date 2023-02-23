@@ -11,6 +11,8 @@ header{
     width: 550px;
 }
 
+*.formular_text{
+    
 */ 
 /*nav{
     margin-bottom: 120px;
@@ -69,72 +71,4 @@ label[for="toggle_button"] span{
     font-size: 40px;
     display: flex;
     align-items: flex-start;
-}
-
-@media(max-width: 975px){ /* blendet Hamburger-Menü ein */
-
-    nav{
-        position: absolute; /* verschiebt das Hamburger-Menü in die obere linke Ecke*/
-        top: 0;
-        left: 0;
-        background-color: var(--secondary-color);
-        padding: 15px;
-        border-radius: 0 0 25px 0; /* rundet die Ecke im Hamburger-Menü ab*/
-
-    }
-    nav ul{
-        display: none;
-        flex-direction: column;
-    }
-    #toggle_button:checked ~ ul{
-        display: flex;
-    }
-    label[for="toggle_button"]{
-        display: block;
-    }
-}
-
-#formular_section{
-    padding: 0 0;
-    background-color: var(--primary-color);
-}
-
-#formular_section h2{
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.flex_container{
-    margin-top: 50px; /* Abstand nach oben*/
-    display: flex; /* Cards sind nun nebeneinander, statt untereinander */
-    align-items: center;
-    /*gap: 40px; */
-    flex-wrap: wrap; /* Elemente werden bei zu wenig Platz untereinander angezeigt */
-    margin: 0 auto;
-    background-color: var(--secondary-color)
-}
-
-.card{
-    width: 350px; /* Breite des Containers */
-    max-width: 95%; /* verhindert, dass die Cards den Rand berühren (90% - Border) */
-    background-color: var(--secondary-color);
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.card p{
-    margin: 15px;
-    text-align: center;
-}
-
-
-@media(max-width: 500px){
-    #formular_section h2{
-        font-size: 12vw;
-    }
-    
-    .flex_container {
-        
-    }
 }
