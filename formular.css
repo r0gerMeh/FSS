@@ -1,77 +1,4 @@
-header{
-    padding: 50px 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
 
-/*.header_text{
-    width: 550px;
-}
-
-*.formular_text{
-    
-*/ 
-/*nav{
-    margin-bottom: 120px;
-}
-*/
-@media(max-width: 800px){ /* weniger Abstand zwischen Navbat und h1 auf mobilen Geräten */
-    nav{
-        margin-bottom: 10vw;
-
-    }
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
-
-nav a{
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    position: relative;
-    padding: 3px;
-}
-
-nav a:hover{
-    color: var(--text-color);
-}
-
-/* Unterstriche in der Navbar */
-nav a::after{
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: var(--main-brand-color);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 150ms ease-in-out;
-}
-
-nav a:hover::after{
-    width: 100%;
-}
-
-#toggle_button{
-    display: none;
-}
-
-label[for="toggle_button"]{
-    display: none;
-}
-
-label[for="toggle_button"] span{
-    font-size: 40px;
-    display: flex;
-    align-items: flex-start;
-}
 
 .pdf_formulare_box{
     margin-top: 50px; /* Abstand nach oben*/
@@ -102,10 +29,17 @@ label[for="toggle_button"] span{
     background: transparent; /* mach den Hintergund (grün) durchsichtig */
 }
 
-/*@media(max-width: 500px){
-    #services_section h2{
-        font-size: 12vw;
+@media(max-width: 500px){
+    .pdf_formulare a{
+        font-size: 12px;
     }
-*/
+
+    .pdf_formulare_box{
+        margin: 0 auto;
+        width: 350px;
+        align-items: center;
+    }
+
+}
 
    
