@@ -6,6 +6,7 @@
     --light-secondary-color: #197d4e;
     --text-color: #fafcfb;
     --secondary-text-color: #000000;
+
 }
 
 *{
@@ -33,13 +34,14 @@ h3{
 
 .subheading{
     margin-top: 25px;
-    color: var(--secondary-text-color);
+    color: gray;
+    /*color: var(--secondary-text-color); */
     text-align: center;
 }
 
 @media(max-width: 800px){ /*975*/
     .subheading{
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
     }
 }
@@ -55,4 +57,52 @@ h3{
     body{
         font-size: 16px;
     }
+}
+
+footer{
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav_footer ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 800px){
+    nav_footer a{
+        font-size: 4vw;
+
+    }
+}
+nav_footer a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+
+nav_footer a:hover{
+    color: var(--text-color);
+}
+
+/* Unterstriche in der Navbar */
+nav_footer a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+nav_footer a:hover::after{
+    width: 100%;
 }
